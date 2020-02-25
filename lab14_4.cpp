@@ -19,3 +19,20 @@ int main(){
 }
 
 //Write definition of shuffle() here 
+ void shuffle (int &a,int &b, int &c, int &d){ 
+	  
+	  int *x[]={&a,&b,&c,&d};
+	
+	for (int i = 0; i <5; i++)
+	{
+		 int g =rand()%4;
+         int h =rand()%4; 
+		 int temp = *x[g];
+		 *x[g]=*x[h];
+		 *x[h]=temp;
+	  }
+	
+	    
+
+ } 
+ 
